@@ -10,5 +10,8 @@
 
 @interface YrFirstInViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+- (IBAction)goToMainView:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end

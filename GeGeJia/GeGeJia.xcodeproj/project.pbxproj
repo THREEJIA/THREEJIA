@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0477E0981CA02EC20013D411 /* AFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477E0971CA02EC20013D411 /* AFManager.m */; };
 		04A04D591C9FE2460032BD2B /* YrFirstInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A04D581C9FE2460032BD2B /* YrFirstInViewController.m */; };
+		04A04D5C1C9FF5B60032BD2B /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A04D5B1C9FF5B60032BD2B /* AnimationViewController.m */; };
 		1427F4B51C9FDFBC00442AFA /* LHB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4B41C9FDFBC00442AFA /* LHB.storyboard */; };
 		1427F4B71C9FDFC500442AFA /* YR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4B61C9FDFC500442AFA /* YR.storyboard */; };
 		1427F4BB1C9FE40800442AFA /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F4B91C9FE40800442AFA /* DetailTableViewCell.m */; };
@@ -24,8 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0477E0961CA02EC20013D411 /* AFManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFManager.h; sourceTree = "<group>"; };
+		0477E0971CA02EC20013D411 /* AFManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFManager.m; sourceTree = "<group>"; };
 		04A04D571C9FE2460032BD2B /* YrFirstInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YrFirstInViewController.h; sourceTree = "<group>"; };
 		04A04D581C9FE2460032BD2B /* YrFirstInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YrFirstInViewController.m; sourceTree = "<group>"; };
+		04A04D5A1C9FF5B60032BD2B /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		04A04D5B1C9FF5B60032BD2B /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		1427F4B41C9FDFBC00442AFA /* LHB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LHB.storyboard; sourceTree = "<group>"; };
 		1427F4B61C9FDFC500442AFA /* YR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YR.storyboard; sourceTree = "<group>"; };
 		1427F4B81C9FE40800442AFA /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
@@ -61,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0477E0951CA02E820013D411 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0477E0961CA02EC20013D411 /* AFManager.h */,
+				0477E0971CA02EC20013D411 /* AFManager.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		1427F4AB1C9FDC3D00442AFA /* TL */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +93,8 @@
 				1427F4B61C9FDFC500442AFA /* YR.storyboard */,
 				04A04D571C9FE2460032BD2B /* YrFirstInViewController.h */,
 				04A04D581C9FE2460032BD2B /* YrFirstInViewController.m */,
+				04A04D5A1C9FF5B60032BD2B /* AnimationViewController.h */,
+				04A04D5B1C9FF5B60032BD2B /* AnimationViewController.m */,
 			);
 			name = YR;
 			sourceTree = "<group>";
@@ -149,6 +166,7 @@
 		148B332E1C9FB29F00179CE6 /* GeGeJia */ = {
 			isa = PBXGroup;
 			children = (
+				0477E0951CA02E820013D411 /* Helper */,
 				1427F4AE1C9FDC8900442AFA /* AppDelegate */,
 				1427F4AC1C9FDC4B00442AFA /* YR */,
 				1427F4AD1C9FDC5300442AFA /* LHB */,
@@ -311,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0477E0981CA02EC20013D411 /* AFManager.m in Sources */,
 				1427F4BB1C9FE40800442AFA /* DetailTableViewCell.m in Sources */,
 				148B33371C9FB29F00179CE6 /* ViewController.m in Sources */,
+				04A04D5C1C9FF5B60032BD2B /* AnimationViewController.m in Sources */,
 				148B33341C9FB29F00179CE6 /* AppDelegate.m in Sources */,
 				04A04D591C9FE2460032BD2B /* YrFirstInViewController.m in Sources */,
 				148B33311C9FB29F00179CE6 /* main.m in Sources */,
