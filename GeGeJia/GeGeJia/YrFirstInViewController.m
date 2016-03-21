@@ -21,7 +21,7 @@
     
     
     
-    _scrollView.backgroundColor = [UIColor redColor];
+    _scrollView.backgroundColor = [UIColor blueColor];
     
     
 }
