@@ -21,6 +21,9 @@
     //_scrollView.contentSize
     
     
+    _scrollView.backgroundColor = [UIColor redColor];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
