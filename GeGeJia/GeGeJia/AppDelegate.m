@@ -7,8 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "YrFirstInViewController.h"
+#import "AnimationViewController.h"
+#import <RDVTabBarController.h>
+#import <RDVTabBarItem.h>
+
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) RDVTabBarController * tabBarController;
 
 @end
 
@@ -16,8 +23,69 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YR" bundle:nil];
+    
+    [self initTabBar];
+    
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        NSLog(@"首次启动");
+        YrFirstInViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"scorll"];
+        self.window.rootViewController = vc;
+    }else {
+        NSLog(@"非首次启动");
+        AnimationViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"an"];
+        self.window.rootViewController = vc;
+        //这儿应该有动画到主界面
+        //fix
+        self.window.rootViewController = _tabBarController;
+    }
+    
+    
+    
+    
     return YES;
+}
+
+- (void)initTabBar{
+    _tabBarController = [[RDVTabBarController alloc] init];
+    //fix  only test
+    UIViewController *firstViewController =[[UIViewController alloc] init];
+    UIViewController *firstNavigationController = [[UINavigationController alloc]initWithRootViewController:firstViewController];
+    
+    UIViewController *secondViewController = [[UIViewController alloc] init];
+    UIViewController *secondNavigationController = [[UINavigationController alloc]initWithRootViewController:secondViewController];
+    
+    UIViewController *thirdViewController = [[UIViewController alloc] init];
+    UIViewController *thirdNavigationController = [[UINavigationController alloc]initWithRootViewController:thirdViewController];
+    UIViewController *fouthViewController = [[UIViewController alloc] init];
+    UIViewController *fouthNavigationController = [[UINavigationController alloc]initWithRootViewController:thirdViewController];
+    
+    [_tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,thirdNavigationController,fouthNavigationController]];
+    //end
+    
+    NSArray *tabBarItemImages = @[@"home", @"mall", @"cart",@"user"];
+    
+    RDVTabBar *tabBar = [_tabBarController tabBar];
+    
+    [tabBar setFrame:CGRectMake(CGRectGetMinX(tabBar.frame), CGRectGetMinY(tabBar.frame), CGRectGetWidth(tabBar.frame), 44)];
+    
+    NSMutableArray *arr = [NSMutableArray new];
+    
+    for (int i = 0; i<4; i++) {
+        RDVTabBarItem * item = [[RDVTabBarItem alloc] init];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",[tabBarItemImages objectAtIndex:i]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",[tabBarItemImages objectAtIndex:i]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        item.title = [tabBarItemImages objectAtIndex:i];
+        item.selectedTitleAttributes = @{NSForegroundColorAttributeName:[UIColor redColor]};
+        item.unselectedTitleAttributes = @{NSForegroundColorAttributeName:[UIColor grayColor]};
+        
+        [arr addObject:item];
+    }
+    [[_tabBarController tabBar] setItems:arr];
+    NSLog(@"yr_%lu",(unsigned long)[[_tabBarController tabBar] items].count);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
