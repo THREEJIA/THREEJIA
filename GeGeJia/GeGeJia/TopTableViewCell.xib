@@ -14,17 +14,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d43-yi-7iI">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TL1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="d43-yi-7iI">
                         <rect key="frame" x="0.0" y="1" width="320" height="128"/>
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="429" y="294"/>
+            <point key="canvasLocation" x="506" y="303"/>
         </tableViewCell>
-        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uJk-JX-sE1">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="681" y="488"/>
-        </imageView>
     </objects>
+    <resources>
+        <image name="TL1.jpeg" width="640" height="260"/>
+    </resources>
 </document>

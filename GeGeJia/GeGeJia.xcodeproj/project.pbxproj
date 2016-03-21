@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1427F4B51C9FDFBC00442AFA /* LHB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4B41C9FDFBC00442AFA /* LHB.storyboard */; };
+		1427F4B71C9FDFC500442AFA /* YR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4B61C9FDFC500442AFA /* YR.storyboard */; };
 		144AFAE21C9FD1B0006AEFFB /* TopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */; };
 		144AFAE31C9FD1B0006AEFFB /* TopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */; };
-		144AFAE51C9FDA73006AEFFB /* YuanRui.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144AFAE41C9FDA73006AEFFB /* YuanRui.storyboard */; };
-		144AFAE71C9FDA86006AEFFB /* LuHongBing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144AFAE61C9FDA86006AEFFB /* LuHongBing.storyboard */; };
 		148B33311C9FB29F00179CE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33301C9FB29F00179CE6 /* main.m */; };
 		148B33341C9FB29F00179CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33331C9FB29F00179CE6 /* AppDelegate.m */; };
 		148B33371C9FB29F00179CE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33361C9FB29F00179CE6 /* ViewController.m */; };
@@ -21,11 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1427F4B41C9FDFBC00442AFA /* LHB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LHB.storyboard; sourceTree = "<group>"; };
+		1427F4B61C9FDFC500442AFA /* YR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YR.storyboard; sourceTree = "<group>"; };
 		144AFADF1C9FD1B0006AEFFB /* TopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTableViewCell.h; sourceTree = "<group>"; };
 		144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTableViewCell.m; sourceTree = "<group>"; };
 		144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopTableViewCell.xib; sourceTree = "<group>"; };
-		144AFAE41C9FDA73006AEFFB /* YuanRui.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YuanRui.storyboard; sourceTree = "<group>"; };
-		144AFAE61C9FDA86006AEFFB /* LuHongBing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LuHongBing.storyboard; sourceTree = "<group>"; };
 		148B332C1C9FB29F00179CE6 /* GeGeJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeGeJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148B33301C9FB29F00179CE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		148B33321C9FB29F00179CE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,11 +56,9 @@
 		1427F4AB1C9FDC3D00442AFA /* TL */ = {
 			isa = PBXGroup;
 			children = (
-				148B33351C9FB29F00179CE6 /* ViewController.h */,
-				148B33361C9FB29F00179CE6 /* ViewController.m */,
-				144AFADF1C9FD1B0006AEFFB /* TopTableViewCell.h */,
-				144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */,
-				144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */,
+				1427F4B11C9FDD6B00442AFA /* manager */,
+				1427F4AF1C9FDD3F00442AFA /* customCells */,
+				1427F4B01C9FDD5B00442AFA /* VC */,
 				148B33381C9FB29F00179CE6 /* TLMain.storyboard */,
 			);
 			name = TL;
@@ -69,7 +67,7 @@
 		1427F4AC1C9FDC4B00442AFA /* YR */ = {
 			isa = PBXGroup;
 			children = (
-				144AFAE41C9FDA73006AEFFB /* YuanRui.storyboard */,
+				1427F4B61C9FDFC500442AFA /* YR.storyboard */,
 			);
 			name = YR;
 			sourceTree = "<group>";
@@ -77,7 +75,7 @@
 		1427F4AD1C9FDC5300442AFA /* LHB */ = {
 			isa = PBXGroup;
 			children = (
-				144AFAE61C9FDA86006AEFFB /* LuHongBing.storyboard */,
+				1427F4B41C9FDFBC00442AFA /* LHB.storyboard */,
 			);
 			name = LHB;
 			sourceTree = "<group>";
@@ -89,6 +87,32 @@
 				148B33331C9FB29F00179CE6 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1427F4AF1C9FDD3F00442AFA /* customCells */ = {
+			isa = PBXGroup;
+			children = (
+				144AFADF1C9FD1B0006AEFFB /* TopTableViewCell.h */,
+				144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */,
+				144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */,
+			);
+			name = customCells;
+			sourceTree = "<group>";
+		};
+		1427F4B01C9FDD5B00442AFA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				148B33351C9FB29F00179CE6 /* ViewController.h */,
+				148B33361C9FB29F00179CE6 /* ViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		1427F4B11C9FDD6B00442AFA /* manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = manager;
 			sourceTree = "<group>";
 		};
 		148B33231C9FB29F00179CE6 = {
@@ -213,8 +237,8 @@
 				148B333C1C9FB29F00179CE6 /* Assets.xcassets in Resources */,
 				144AFAE31C9FD1B0006AEFFB /* TopTableViewCell.xib in Resources */,
 				148B333A1C9FB29F00179CE6 /* TLMain.storyboard in Resources */,
-				144AFAE51C9FDA73006AEFFB /* YuanRui.storyboard in Resources */,
-				144AFAE71C9FDA86006AEFFB /* LuHongBing.storyboard in Resources */,
+				1427F4B71C9FDFC500442AFA /* YR.storyboard in Resources */,
+				1427F4B51C9FDFBC00442AFA /* LHB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
