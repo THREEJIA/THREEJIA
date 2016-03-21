@@ -26,7 +26,6 @@
         <!--Root View Controller-->
         <scene sceneID="TWg-46-Efw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5En-0w-ZsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Aro-Qg-Kdm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HgI-6T-Zzz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -49,6 +48,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="2W5-V0-74B"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5En-0w-ZsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="159"/>
         </scene>
