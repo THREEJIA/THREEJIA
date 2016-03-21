@@ -12,11 +12,12 @@
 		1427F4B71C9FDFC500442AFA /* YR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4B61C9FDFC500442AFA /* YR.storyboard */; };
 		1427F4BB1C9FE40800442AFA /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427F4B91C9FE40800442AFA /* DetailTableViewCell.m */; };
 		1427F4BC1C9FE40800442AFA /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4BA1C9FE40800442AFA /* DetailTableViewCell.xib */; };
+		1427F4BE1C9FEB1C00442AFA /* a.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1427F4BD1C9FEB1C00442AFA /* a.jpeg */; };
 		144AFAE21C9FD1B0006AEFFB /* TopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */; };
 		144AFAE31C9FD1B0006AEFFB /* TopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */; };
 		148B33311C9FB29F00179CE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33301C9FB29F00179CE6 /* main.m */; };
 		148B33341C9FB29F00179CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33331C9FB29F00179CE6 /* AppDelegate.m */; };
-		148B33371C9FB29F00179CE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33361C9FB29F00179CE6 /* ViewController.m */; };
+		148B33371C9FB29F00179CE6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B33361C9FB29F00179CE6 /* MainViewController.m */; };
 		148B333A1C9FB29F00179CE6 /* TLMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B33381C9FB29F00179CE6 /* TLMain.storyboard */; };
 		148B333C1C9FB29F00179CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148B333B1C9FB29F00179CE6 /* Assets.xcassets */; };
 		148B333F1C9FB29F00179CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B333D1C9FB29F00179CE6 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 		1427F4B81C9FE40800442AFA /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
 		1427F4B91C9FE40800442AFA /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		1427F4BA1C9FE40800442AFA /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		1427F4BD1C9FEB1C00442AFA /* a.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpeg; sourceTree = "<group>"; };
 		144AFADF1C9FD1B0006AEFFB /* TopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTableViewCell.h; sourceTree = "<group>"; };
 		144AFAE01C9FD1B0006AEFFB /* TopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTableViewCell.m; sourceTree = "<group>"; };
 		144AFAE11C9FD1B0006AEFFB /* TopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopTableViewCell.xib; sourceTree = "<group>"; };
@@ -38,8 +40,8 @@
 		148B33301C9FB29F00179CE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		148B33321C9FB29F00179CE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		148B33331C9FB29F00179CE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		148B33351C9FB29F00179CE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		148B33361C9FB29F00179CE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		148B33351C9FB29F00179CE6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		148B33361C9FB29F00179CE6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		148B33391C9FB29F00179CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TLMain.storyboard; sourceTree = "<group>"; };
 		148B333B1C9FB29F00179CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148B333E1C9FB29F00179CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1427F4B11C9FDD6B00442AFA /* manager */,
-				1427F4AF1C9FDD3F00442AFA /* customCells */,
+				1427F4BF1C9FF13C00442AFA /* views */,
 				1427F4B01C9FDD5B00442AFA /* VC */,
 				148B33381C9FB29F00179CE6 /* TLMain.storyboard */,
 			);
@@ -115,8 +117,8 @@
 		1427F4B01C9FDD5B00442AFA /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				148B33351C9FB29F00179CE6 /* ViewController.h */,
-				148B33361C9FB29F00179CE6 /* ViewController.m */,
+				148B33351C9FB29F00179CE6 /* MainViewController.h */,
+				148B33361C9FB29F00179CE6 /* MainViewController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -126,6 +128,22 @@
 			children = (
 			);
 			name = manager;
+			sourceTree = "<group>";
+		};
+		1427F4BF1C9FF13C00442AFA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1427F4C01C9FF14D00442AFA /* pickerView */,
+				1427F4AF1C9FDD3F00442AFA /* customCells */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1427F4C01C9FF14D00442AFA /* pickerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = pickerView;
 			sourceTree = "<group>";
 		};
 		148B33231C9FB29F00179CE6 = {
@@ -149,6 +167,7 @@
 		148B332E1C9FB29F00179CE6 /* GeGeJia */ = {
 			isa = PBXGroup;
 			children = (
+				1427F4BD1C9FEB1C00442AFA /* a.jpeg */,
 				1427F4AE1C9FDC8900442AFA /* AppDelegate */,
 				1427F4AC1C9FDC4B00442AFA /* YR */,
 				1427F4AD1C9FDC5300442AFA /* LHB */,
@@ -247,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				148B333F1C9FB29F00179CE6 /* LaunchScreen.storyboard in Resources */,
+				1427F4BE1C9FEB1C00442AFA /* a.jpeg in Resources */,
 				148B333C1C9FB29F00179CE6 /* Assets.xcassets in Resources */,
 				144AFAE31C9FD1B0006AEFFB /* TopTableViewCell.xib in Resources */,
 				148B333A1C9FB29F00179CE6 /* TLMain.storyboard in Resources */,
@@ -312,7 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1427F4BB1C9FE40800442AFA /* DetailTableViewCell.m in Sources */,
-				148B33371C9FB29F00179CE6 /* ViewController.m in Sources */,
+				148B33371C9FB29F00179CE6 /* MainViewController.m in Sources */,
 				148B33341C9FB29F00179CE6 /* AppDelegate.m in Sources */,
 				04A04D591C9FE2460032BD2B /* YrFirstInViewController.m in Sources */,
 				148B33311C9FB29F00179CE6 /* main.m in Sources */,
