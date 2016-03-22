@@ -16,12 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //_scrollView.contentSize
     
-    UITableView
-    
-    
-    _scrollView.backgroundColor = [UIColor redColor];
     
     
 }
