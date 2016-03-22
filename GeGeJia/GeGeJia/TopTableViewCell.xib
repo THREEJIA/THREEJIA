@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -22,4 +23,67 @@
             <point key="canvasLocation" x="275" y="200"/>
         </tableViewCell>
     </objects>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="TopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="top" image="a.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="d43-yi-7iI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b.png" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-jR-E9M">
+                        <rect key="frame" x="8" y="134" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dOH-jR-E9M" secondAttribute="height" multiplier="1:1" id="VwN-yv-m8H"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滋阴补肾   平肝清热" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIv-BV-6Gl">
+                        <rect key="frame" x="166" y="131" width="146" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="146" id="UoJ-KL-K5N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.074929296970000003" blue="0.30139633129999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCY-Pq-KrO">
+                        <rect key="frame" x="203" y="0.0" width="117" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="格格优选淡晒干贝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnT-t7-YBd">
+                        <rect key="frame" x="26" y="131" width="132" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aIv-BV-6Gl" secondAttribute="bottom" constant="2" id="1UU-uL-mUQ"/>
+                    <constraint firstItem="d43-yi-7iI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Wj-X9-952"/>
+                    <constraint firstAttribute="bottom" secondItem="d43-yi-7iI" secondAttribute="bottom" constant="24" id="4Ch-lH-mVC"/>
+                    <constraint firstItem="bnT-t7-YBd" firstAttribute="leading" secondItem="dOH-jR-E9M" secondAttribute="trailing" constant="2" id="ESB-Q9-IXM"/>
+                    <constraint firstItem="aIv-BV-6Gl" firstAttribute="top" secondItem="d43-yi-7iI" secondAttribute="bottom" constant="1" id="FzD-9h-gZP"/>
+                    <constraint firstAttribute="trailing" secondItem="d43-yi-7iI" secondAttribute="trailing" id="SST-Z4-nfu"/>
+                    <constraint firstItem="d43-yi-7iI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aq1-n6-Ads"/>
+                    <constraint firstItem="aIv-BV-6Gl" firstAttribute="leading" secondItem="bnT-t7-YBd" secondAttribute="trailing" constant="8" id="eFc-pt-4F7"/>
+                    <constraint firstItem="bnT-t7-YBd" firstAttribute="top" secondItem="d43-yi-7iI" secondAttribute="bottom" constant="1" id="eaN-mg-wmh"/>
+                    <constraint firstAttribute="bottom" secondItem="dOH-jR-E9M" secondAttribute="bottom" constant="4" id="iAD-a1-aoF"/>
+                    <constraint firstItem="dOH-jR-E9M" firstAttribute="top" secondItem="d43-yi-7iI" secondAttribute="bottom" constant="4" id="jfF-K4-der"/>
+                    <constraint firstAttribute="bottom" secondItem="bnT-t7-YBd" secondAttribute="bottom" constant="2" id="lCi-eQ-QNM"/>
+                    <constraint firstItem="dOH-jR-E9M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qfd-OY-CoI"/>
+                    <constraint firstAttribute="trailing" secondItem="aIv-BV-6Gl" secondAttribute="trailing" constant="8" id="tGW-4K-Zcj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="269" y="265.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="a.jpeg" width="640" height="260"/>
+        <image name="b.png" width="48" height="48"/>
+    </resources>
 </document>

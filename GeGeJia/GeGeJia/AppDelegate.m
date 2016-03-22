@@ -17,6 +17,9 @@
 
 @property (nonatomic, strong) RDVTabBarController * tabBarController;
 
+
+@interface AppDelegate ()
+
 @end
 
 @implementation AppDelegate
@@ -86,6 +89,10 @@
     }
     [[_tabBarController tabBar] setItems:arr];
     NSLog(@"yr_%lu",(unsigned long)[[_tabBarController tabBar] items].count);
+}
+
+    // Override point for customization after application launch.
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

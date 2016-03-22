@@ -12,6 +12,8 @@
 
 @interface YrFirstInViewController ()<UIScrollViewDelegate>
 
+@interface YrFirstInViewController ()
+
 @end
 
 @implementation YrFirstInViewController
@@ -40,7 +42,7 @@
     int num = _scrollView.contentOffset.x/[UIScreen mainScreen].bounds.size.width;
     _pageControl.currentPage = num;
     _button.userInteractionEnabled = YES;
-
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -70,6 +72,10 @@
 
 
 
+
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -84,6 +90,5 @@
  // Pass the selected object to the new view controller.
  }
  */
-
 
 @end

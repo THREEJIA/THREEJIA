@@ -24,6 +24,7 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>YR</string>
+	<string>TLMain</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
