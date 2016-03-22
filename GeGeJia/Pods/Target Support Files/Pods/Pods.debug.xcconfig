@@ -1,5 +1,11 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+<<<<<<< HEAD
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/RDVTabBarController"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/RDVTabBarController"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"RDVTabBarController" -framework "CoreGraphics" -framework "Foundation" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+=======
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 PODS_ROOT = ${SRCROOT}/Pods

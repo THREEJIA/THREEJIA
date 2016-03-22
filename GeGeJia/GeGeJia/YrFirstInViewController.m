@@ -7,10 +7,15 @@
 //
 
 #import "YrFirstInViewController.h"
+<<<<<<< HEAD
 //test
 #import "AnimationViewController.h"
 
 @interface YrFirstInViewController ()<UIScrollViewDelegate>
+=======
+
+@interface YrFirstInViewController ()
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 
 @end
 
@@ -19,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     for (int i = 1; i<=3; i++) {
         UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width*(i-1), 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         imageview.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@%d%@",@"loading",i,@"_568h"]];
@@ -70,6 +76,12 @@
 
 
 
+=======
+    
+    
+}
+
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -85,5 +97,8 @@
  }
  */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 @end

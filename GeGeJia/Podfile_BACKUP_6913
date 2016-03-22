@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+<<<<<<< HEAD
+pod 'AFNetworking', '~> 3.0'
+
+pod 'RDVTabBarController'
+=======
+pod 'AFNetworking', '~> 3.0'
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d

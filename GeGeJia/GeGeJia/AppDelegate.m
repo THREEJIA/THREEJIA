@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+<<<<<<< HEAD
 #import "YrFirstInViewController.h"
 #import "AnimationViewController.h"
 #import <RDVTabBarController.h>
@@ -17,12 +18,18 @@
 
 @property (nonatomic, strong) RDVTabBarController * tabBarController;
 
+=======
+
+@interface AppDelegate ()
+
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+<<<<<<< HEAD
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YR" bundle:nil];
     
@@ -88,6 +95,12 @@
     NSLog(@"yr_%lu",(unsigned long)[[_tabBarController tabBar] items].count);
 }
 
+=======
+    // Override point for customization after application launch.
+    return YES;
+}
+
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

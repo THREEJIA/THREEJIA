@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4e1-AN-x9n">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -8,7 +12,11 @@
         <!--Yr First In View Controller-->
         <scene sceneID="U6C-Gy-8GI">
             <objects>
+<<<<<<< HEAD
                 <viewController storyboardIdentifier="scorll" id="4e1-AN-x9n" customClass="YrFirstInViewController" sceneMemberID="viewController">
+=======
+                <viewController id="4e1-AN-x9n" customClass="YrFirstInViewController" sceneMemberID="viewController">
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PFu-uD-XL5"/>
                         <viewControllerLayoutGuide type="bottom" id="NN2-cQ-ZQt"/>
@@ -20,6 +28,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZS-96-z5A">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </scrollView>
+<<<<<<< HEAD
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-Rc-CA5">
                                 <rect key="frame" x="140" y="521" width="39" height="37"/>
                                 <constraints>
@@ -49,17 +58,30 @@
                             <constraint firstItem="0ZS-96-z5A" firstAttribute="leading" secondItem="ROR-qj-Og1" secondAttribute="leading" id="gG1-rH-mfa"/>
                             <constraint firstItem="d85-UQ-MvU" firstAttribute="leading" secondItem="ROR-qj-Og1" secondAttribute="leading" id="hoh-JQ-sjC"/>
                             <constraint firstItem="NN2-cQ-ZQt" firstAttribute="top" secondItem="hTe-Rc-CA5" secondAttribute="bottom" constant="10" id="x0z-ut-ufy"/>
+=======
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0ZS-96-z5A" secondAttribute="trailing" id="WYX-gi-tC4"/>
+                            <constraint firstItem="NN2-cQ-ZQt" firstAttribute="top" secondItem="0ZS-96-z5A" secondAttribute="bottom" id="Xst-dc-Cv9"/>
+                            <constraint firstItem="0ZS-96-z5A" firstAttribute="top" secondItem="ROR-qj-Og1" secondAttribute="top" id="eA2-ff-2sm"/>
+                            <constraint firstItem="0ZS-96-z5A" firstAttribute="leading" secondItem="ROR-qj-Og1" secondAttribute="leading" id="gG1-rH-mfa"/>
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="button" destination="d85-UQ-MvU" id="gVP-e9-M8U"/>
                         <outlet property="pageControl" destination="hTe-Rc-CA5" id="JFG-Q7-CE7"/>
+=======
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
                         <outlet property="scrollView" destination="0ZS-96-z5A" id="Lt7-BX-AyN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efn-eg-tJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="178" y="330"/>
         </scene>
         <!--Animation View Controller-->
@@ -96,4 +118,9 @@
     <resources>
         <image name="LaunchImage-700" width="320" height="480"/>
     </resources>
+=======
+            <point key="canvasLocation" x="306" y="345"/>
+        </scene>
+    </scenes>
+>>>>>>> 1cf7506efd2c46b1d4a6e01166e538897e4a102d
 </document>
