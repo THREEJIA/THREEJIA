@@ -1,0 +1,17 @@
+//
+//  GeGeJia-PrefixHeader.pch
+//  GeGeJia
+//
+//  Created by 孙诚 on 16/3/24.
+//  Copyright © 2016年 Tony. All rights reserved.
+//
+
+#ifndef GeGeJia_PrefixHeader_pch
+#define GeGeJia_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import"Header.h"
+
+#endif /* GeGeJia_PrefixHeader_pch */
