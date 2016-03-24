@@ -1,14 +1,14 @@
 //
-//  TableViewCell2.m
+//  DetailTableViewCell.m
 //  GeGeJia
 //
-//  Created by lu on 16/3/21.
+//  Created by 孙诚 on 16/3/21.
 //  Copyright © 2016年 Tony. All rights reserved.
 //
 
-#import "TableViewCell2.h"
+#import "DetailTableViewCell.h"
 
-@implementation TableViewCell2
+@implementation DetailTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
@@ -20,6 +20,4 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)bigButtonWay:(UIButton *)sender {
-}
 @end
