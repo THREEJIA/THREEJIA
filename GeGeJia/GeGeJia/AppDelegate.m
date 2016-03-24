@@ -11,14 +11,27 @@
 #import "AnimationViewController.h"
 #import <RDVTabBarController.h>
 #import <RDVTabBarItem.h>
+#import "AFManager.h"
+#import <SMS_SDK/SMSSDK.h>
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+
+//微信SDK头文件
+#import "WXApi.h"
+
+//新浪微博SDK头文件
+#import "WeiboSDK.h"
+//新浪微博SDK需要在项目Build Settings中的Other Linker Flags添加"-ObjC"
 
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) RDVTabBarController * tabBarController;
-
-
-@interface AppDelegate ()
 
 @end
 
@@ -26,6 +39,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [SMSSDK registerApp:@"10cd3ef33df28" withSecret:@"53a5ea11f3c060511bcb0dfc3d5fff3e"];
+    [self shareSDKinit];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YR" bundle:nil];
     
@@ -51,8 +67,60 @@
     return YES;
 }
 
+- (void)shareSDKinit{
+    [ShareSDK registerApp:@"10d20a0b52bf5"
+     
+          activePlatforms:@[
+                            @(SSDKPlatformTypeSinaWeibo),
+                            @(SSDKPlatformTypeWechat),
+                            @(SSDKPlatformTypeQQ)]
+                 onImport:^(SSDKPlatformType platformType)
+     {
+         switch (platformType)
+         {
+             case SSDKPlatformTypeWechat:
+                 [ShareSDKConnector connectWeChat:[WXApi class]];
+                 break;
+             case SSDKPlatformTypeQQ:
+                 [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                 break;
+             case SSDKPlatformTypeSinaWeibo:
+                 [ShareSDKConnector connectWeibo:[WeiboSDK class]];
+                 break;
+             default:
+                 break;
+         }
+     }
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
+     {
+         
+         switch (platformType)
+         {
+             case SSDKPlatformTypeSinaWeibo:
+                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
+                 [appInfo SSDKSetupSinaWeiboByAppKey:@"1134660933"
+                                           appSecret:@"15dac8640a18215306a71cf4cfceb6a0"
+                                         redirectUri:@"http://www.baidu.com"
+                                            authType:SSDKAuthTypeBoth];
+                 break;
+             case SSDKPlatformTypeWechat:
+                 [appInfo SSDKSetupWeChatByAppId:@"wx4868b35061f87885"
+                                       appSecret:@"64020361b8ec4c99936c0e3999a9f249"];
+                 break;
+             case SSDKPlatformTypeQQ:
+                 [appInfo SSDKSetupQQByAppId:@"100371282"
+                                      appKey:@"aed9b0303e3ed1e27bae87c33761161d"
+                                    authType:SSDKAuthTypeBoth];
+                 break;
+             default:
+                 break;
+         }
+     }];
+}
+
 - (void)initTabBar{
     _tabBarController = [[RDVTabBarController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YR" bundle:nil];
     //fix  only test
     UIViewController *firstViewController =[[UIViewController alloc] init];
     UIViewController *firstNavigationController = [[UINavigationController alloc]initWithRootViewController:firstViewController];
@@ -62,8 +130,7 @@
     
     UIViewController *thirdViewController = [[UIViewController alloc] init];
     UIViewController *thirdNavigationController = [[UINavigationController alloc]initWithRootViewController:thirdViewController];
-    UIViewController *fouthViewController = [[UIViewController alloc] init];
-    UIViewController *fouthNavigationController = [[UINavigationController alloc]initWithRootViewController:fouthViewController];
+    UINavigationController * fouthNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"user"];
     
     [_tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,thirdNavigationController,fouthNavigationController]];
     //end
@@ -89,10 +156,6 @@
     }
     [[_tabBarController tabBar] setItems:arr];
     NSLog(@"yr_%lu",(unsigned long)[[_tabBarController tabBar] items].count);
-}
-
-    // Override point for customization after application launch.
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
